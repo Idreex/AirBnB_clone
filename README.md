@@ -42,7 +42,7 @@ All the development and testing was runned over an operating system Ubuntu 20.04
 ## 0x03 Installation
 
 ```bash
-git clone https://github.com/aysuarex/AirBnB_clone.git
+git clone https://github.com/Idreex/AirBnB_clone.git
 ```
 
 change to the `AirBnb` directory and run the command:
@@ -263,19 +263,15 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 ```
 ## Authors
 <details>
-    <summary>Ayomide Suara</summary>
+    <summary>Oladimeji Idrees</summary>
     <ul>
-    <li><a href="https://www.github.com/aysuarex">Github</a></li>
-    <li><a href="https://www.twitter.com/Aysuarex">Twitter</a></li>
-    <li><a href="mailto:aysuarex@gmail.com">e-mail</a></li>
+    <li><a href="https://www.github.com/Idreex">Github</a></li>
+    
+    <li><a href="mailto:idreesademola07@gmail.com">e-mail</a></li>
     </ul>
 </details>
 <details>
-    <summary>Bamidele Adefolaju</summary>
-    <ul>
-    <li><a href="https://www.github.com/lexxyla">Github</a></li>
-    <li><a href="https://www.twitter.com/lexxyla">Twitter</a></li>
-    <li><a href="mailto:bamideleadefolaju@gmail.com">e-mail</a></li>
-    </ul>
+    <summary>Al-Hassan Oladimeji</summary>
+   
 </details>
 
