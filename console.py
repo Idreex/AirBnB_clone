@@ -33,6 +33,7 @@ def parse(arg):
 
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
+
     Attributes:
         prompt (str): The command prompt.
     """
@@ -74,32 +75,17 @@ class HBNBCommand(cmd.Cmd):
         return False
 
     def do_quit(self, arg):
-        """
-        -> Description: quits the command interpreter
-        -> Usage: quit
-        Return: True
-        """
+        """Quit command to exit the program."""
         return True
 
     def do_EOF(self, arg):
-        """
-        -> Description:
-            - quits command interpreter on EOF marker (if no text in cmd line)
-            - performs forward delete if in between two
-              characters or line beginning
-        -> Usage: Ctrl + D
-        Return: True
-        """
+        """EOF signal to exit the program."""
         print("")
         return True
 
     def do_create(self, arg):
-        """
-        -> Description:
-            - creates a new instance of BaseModel
-            - saves it the JSON file
-            - prints the id
-        -> Usage: create <ClassName>
+        """Usage: create <class>
+        Create a new class instance and print its id.
         """
         argl = parse(arg)
         if len(argl) == 0:
@@ -111,11 +97,8 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_show(self, arg):
-        """
-        Description:
-            prints the string representation of instance
-            based on class name and id
-        -> Usage: show <ClassName> <id>
+        """Usage: show <class> <id> or <class>.show(<id>)
+        Display the string representation of a class instance of a given id.
         """
         argl = parse(arg)
         objdict = storage.all()
@@ -131,12 +114,8 @@ class HBNBCommand(cmd.Cmd):
             print(objdict["{}.{}".format(argl[0], argl[1])])
 
     def do_destroy(self, arg):
-        """
-        -> Description:
-            deletes an instance based on the class name and id
-            N/B: (change is saved into the JSON file)
-        -> Usage: destroy <ClassName> <id>
-        """
+        """Usage: destroy <class> <id> or <class>.destroy(<id>)
+        Delete a class instance of a given id."""
         argl = parse(arg)
         objdict = storage.all()
         if len(argl) == 0:
